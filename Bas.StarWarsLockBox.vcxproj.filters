@@ -27,5 +27,13 @@
     <ClInclude Include="AudioSample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LedBlinker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LedBlinker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
