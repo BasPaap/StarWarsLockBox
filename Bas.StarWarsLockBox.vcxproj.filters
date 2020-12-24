@@ -27,12 +27,18 @@
     <ClInclude Include="AudioSample.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LedBlinker.h">
+    <ClInclude Include="Led.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkingLed.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LedBlinker.cpp">
+    <ClCompile Include="Led.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlinkingLed.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -105,12 +105,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AudioSample.h" />
-    <ClInclude Include="LedBlinker.h" />
+    <ClInclude Include="Led.h" />
+    <ClInclude Include="BlinkingLed.h" />
     <ClInclude Include="__vm\.Bas.StarWarsLockBox.vsarduino.h" />
     <ClInclude Include="__vm\.StarWarsLockBox.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LedBlinker.cpp" />
+    <ClCompile Include="Led.cpp" />
+    <ClCompile Include="BlinkingLed.cpp" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
