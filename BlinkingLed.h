@@ -18,7 +18,7 @@ namespace Bas
 	public:
 		BlinkingLed(int pin, int numMillisecondsOn, int numMillisecondsOff);
 		void Update();
-		void Start();
-		void Stop();
+		void TurnOn();
+		void TurnOff();
 	};
 }

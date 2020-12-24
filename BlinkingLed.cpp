@@ -27,7 +27,7 @@ void Bas::BlinkingLed::Update()
 }
 
 
-void Bas::BlinkingLed::Start()
+void Bas::BlinkingLed::TurnOn()
 {
     Serial.print("Turning BlinkingLed on on pin ");
     Serial.println(this->pin);
@@ -37,7 +37,7 @@ void Bas::BlinkingLed::Start()
 }
 
 
-void Bas::BlinkingLed::Stop()
+void Bas::BlinkingLed::TurnOff()
 {
     Serial.print("Turning BlinkingLed off on pin ");
     Serial.println(this->pin);
