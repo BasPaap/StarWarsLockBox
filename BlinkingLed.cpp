@@ -5,6 +5,11 @@ Bas::BlinkingLed::BlinkingLed(int pin, int numMillisecondsOn, int numMillisecond
 {
 }
 
+void Bas::BlinkingLed::Initialize()
+{
+    pinMode(this->pin, OUTPUT);
+}
+
 void Bas::BlinkingLed::Update()
 {
     static int millisToSpendInState = this->numMillisecondsOn;
@@ -26,12 +31,10 @@ void Bas::BlinkingLed::Update()
     }
 }
 
-
 void Bas::BlinkingLed::TurnOn()
 {
     Serial.print("Turning BlinkingLed on on pin ");
     Serial.println(this->pin);
-    pinMode(this->pin, OUTPUT);
     digitalWrite(this->pin, LOW);
     this->isRunning = true;
 }
