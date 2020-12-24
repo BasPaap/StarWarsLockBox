@@ -4,13 +4,18 @@ Bas::Led::Led(int pin) : pin{ pin }
 {
 }
 
-void Bas::Led::TurnOn()
+void Bas::Led::Initialize()
 {
-    // TODO: Add your implementation code here.
+    pinMode(this->pin, OUTPUT);
+}
+
+void Bas::Led::TurnOn()
+{    
+    digitalWrite(this->pin, HIGH);
 }
 
 
 void Bas::Led::TurnOff()
-{
-    // TODO: Add your implementation code here.
+{    
+    digitalWrite(this->pin, LOW);
 }
