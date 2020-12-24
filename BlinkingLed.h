@@ -9,14 +9,14 @@
 namespace Bas
 {
 	// Encapsulates a blinking LED
-	class LedBlinker
+	class BlinkingLed
 	{
 		int pin;
 		int numMillisecondsOn;
 		int numMillisecondsOff;
 		bool isRunning = false;
 	public:
-		LedBlinker(int pin, int numMillisecondsOn, int numMillisecondsOff);
+		BlinkingLed(int pin, int numMillisecondsOn, int numMillisecondsOff);
 		void Update();
 		void Start();
 		void Stop();

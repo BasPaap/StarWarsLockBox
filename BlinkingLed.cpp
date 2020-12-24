@@ -1,11 +1,11 @@
-#include "LedBlinker.h"
+#include "BlinkingLed.h"
 
 
-Bas::LedBlinker::LedBlinker(int pin, int numMillisecondsOn, int numMillisecondsOff) : pin{ pin }, numMillisecondsOn{numMillisecondsOn}, numMillisecondsOff{numMillisecondsOff}
+Bas::BlinkingLed::BlinkingLed(int pin, int numMillisecondsOn, int numMillisecondsOff) : pin{ pin }, numMillisecondsOn{numMillisecondsOn}, numMillisecondsOff{numMillisecondsOff}
 {
 }
 
-void Bas::LedBlinker::Update()
+void Bas::BlinkingLed::Update()
 {
     static int millisToSpendInState = this->numMillisecondsOn;
     static long previousMillis;
@@ -27,9 +27,9 @@ void Bas::LedBlinker::Update()
 }
 
 
-void Bas::LedBlinker::Start()
+void Bas::BlinkingLed::Start()
 {
-    Serial.print("Turning LedBlinker on on pin ");
+    Serial.print("Turning BlinkingLed on on pin ");
     Serial.println(this->pin);
     pinMode(this->pin, OUTPUT);
     digitalWrite(this->pin, LOW);
@@ -37,9 +37,9 @@ void Bas::LedBlinker::Start()
 }
 
 
-void Bas::LedBlinker::Stop()
+void Bas::BlinkingLed::Stop()
 {
-    Serial.print("Turning LedBlinker off on pin ");
+    Serial.print("Turning BlinkingLed off on pin ");
     Serial.println(this->pin);
     digitalWrite(this->pin, LOW);
     this->isRunning = false;
