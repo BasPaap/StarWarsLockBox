@@ -1,7 +1,5 @@
 #pragma once
 
-
-
 #define SAMPLE_RATE 8000;
 
 namespace Bas
