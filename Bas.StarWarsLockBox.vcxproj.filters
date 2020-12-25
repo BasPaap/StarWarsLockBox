@@ -24,13 +24,16 @@
     <ClInclude Include="__vm\.StarWarsLockBox.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AudioSample.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Led.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BlinkingLed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnlockSoundData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -39,6 +42,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BlinkingLed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

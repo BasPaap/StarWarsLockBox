@@ -104,15 +104,17 @@
     <None Include="Bas.StarWarsLockBox.ino" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AudioSample.h" />
+    <ClInclude Include="UnlockSoundData.h" />
     <ClInclude Include="Led.h" />
     <ClInclude Include="BlinkingLed.h" />
+    <ClInclude Include="Sound.h" />
     <ClInclude Include="__vm\.Bas.StarWarsLockBox.vsarduino.h" />
     <ClInclude Include="__vm\.StarWarsLockBox.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Led.cpp" />
     <ClCompile Include="BlinkingLed.cpp" />
+    <ClCompile Include="Sound.cpp" />
   </ItemGroup>
   <PropertyGroup>
     <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
