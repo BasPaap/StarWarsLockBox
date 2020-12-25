@@ -17,9 +17,9 @@ namespace Bas
 		bool isRunning = false;
 	public:
 		BlinkingLed(int pin, int numMillisecondsOn, int numMillisecondsOff);
-		void Initialize();
-		void Update();
-		void TurnOn();
-		void TurnOff();
+		void initialize();
+		void update();
+		void turnOn();
+		void turnOff();
 	};
 }

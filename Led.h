@@ -6,9 +6,9 @@ namespace Bas
 		int pin;
 	public:
 		Led(int pin);
-		void Initialize();
-		void TurnOn();
-		void TurnOff();
+		void initialize();
+		void turnOn();
+		void turnOff();
 	};
 }
 

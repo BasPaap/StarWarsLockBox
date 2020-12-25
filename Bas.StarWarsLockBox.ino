@@ -23,15 +23,17 @@ void setup()
 {
 	Serial.begin(9600);	
 	
-	greenLed.Initialize();
-	redLed.Initialize();
-	redLed.TurnOn();
+	greenLed.initialize();
+	redLed.initialize();
+	redLed.turnOn();
 }
 
 // Add the main program code into the continuous loop() function
 void loop()
 {
+	redLed.update();
 }
+
 
 // This is called at 8000 Hz to load the next sample.
 ISR(TIMER1_COMPA_vect) {
