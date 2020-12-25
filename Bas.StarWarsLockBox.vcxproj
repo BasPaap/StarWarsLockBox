@@ -104,6 +104,7 @@
     <None Include="Bas.StarWarsLockBox.ino" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Button.h" />
     <ClInclude Include="UnlockSoundData.h" />
     <ClInclude Include="Led.h" />
     <ClInclude Include="BlinkingLed.h" />
@@ -112,6 +113,7 @@
     <ClInclude Include="__vm\.StarWarsLockBox.vsarduino.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Led.cpp" />
     <ClCompile Include="BlinkingLed.cpp" />
     <ClCompile Include="Sound.cpp" />
