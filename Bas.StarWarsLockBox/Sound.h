@@ -1,5 +1,11 @@
 #pragma once
 
+#if defined(ARDUINO) && ARDUINO >= 100
+  #include "arduino.h"
+#else
+  #include "WProgram.h"
+#endif
+
 #define SAMPLE_RATE 8000;
 
 namespace Bas
@@ -20,4 +26,3 @@ namespace Bas
 		void onInterrupt();
 	};
 }
-
