@@ -7,6 +7,9 @@ Bas::BlinkingLed::BlinkingLed(int pin, int numMillisecondsOn, int numMillisecond
 
 void Bas::BlinkingLed::initialize()
 {
+    Serial.print("Initializing BlinkingLed on pin ");
+    Serial.println(this->pin);
+
     pinMode(this->pin, OUTPUT);
 }
 
