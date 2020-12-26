@@ -6,6 +6,8 @@ Bas::Led::Led(int pin) : pin{ pin }
 
 void Bas::Led::initialize()
 {
+    Serial.print("Initializing LED on pin ");
+    Serial.println(this->pin);
     pinMode(this->pin, OUTPUT);
 }
 

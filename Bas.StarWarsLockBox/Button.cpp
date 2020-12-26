@@ -13,6 +13,8 @@ namespace Bas
 
 	void Button::initialize(CallbackPointer fallingCallback, CallbackPointer risingCallback)
 	{
+    Serial.print("Initializing button on pin ");
+    Serial.println(this->pin);
 		this->risingCallback = risingCallback;
 		this->fallingCallback = fallingCallback;
 		pinMode(this->pin, INPUT_PULLUP);
