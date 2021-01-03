@@ -21,6 +21,8 @@ Bas::Led greenLed{ greenLedPin };
 Bas::BlinkingLed redLed{ redLedPin, 200, 400 };
 Bas::Button unlockButton{ buttonPin, debounceDelay };
 
+bool hasButtonBeenPressed = false;  // Ensure that the button can only be pressed once.
+
 // The setup() function runs once each time the micro-controller starts
 void setup()
 {
@@ -42,9 +44,14 @@ void loop()
 
 void onUnlockButtonPressed()
 {
-	redLed.turnOff();
-	greenLed.turnOn();
-	unlockSound.play();
+  if (!hasButtonBeenPressed)
+  {
+	  redLed.turnOff();
+	  greenLed.turnOn();
+	  unlockSound.play();
+
+    hasButtonBeenPressed = true;
+  }
 }
 
 // This is called at 8000 Hz to load the next sample.
